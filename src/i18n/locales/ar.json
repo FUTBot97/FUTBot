@@ -1,0 +1,57 @@
+{
+  "login": {
+    "title": "فيوت بوت - لوحة التحكم",
+    "subtitle": "تسجيل الدخول لإدارة الاشتراكات",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "usernamePlaceholder": "أدخل اسم المستخدم",
+    "passwordPlaceholder": "أدخل كلمة المرور"
+  },
+  "dashboard": {
+    "title": "إدارة اشتراكات فيوت بوت",
+    "subscriptionsTitle": "الاشتراكات",
+    "stats": {
+      "total": "إجمالي الاشتراكات",
+      "active": "الاشتراكات النشطة",
+      "expired": "الاشتراكات المنتهية"
+    },
+    "addSubscription": "اشتراك جديد",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "endDate": "تاريخ النهاية",
+    "status": "الحالة",
+    "actions": "الإجراءات",
+    "active": "نشط",
+    "expired": "منتهي",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "duration": {
+      "custom": "تاريخ مخصص",
+      "preset": "مدة محددة",
+      "6hours": "6 ساعات",
+      "1month": "شهر",
+      "2months": "شهرين",
+      "3months": "3 شهور",
+      "6months": "6 شهور",
+      "1year": "سنة"
+    },
+    "search": "البحث في الاشتراكات...",
+    "export": "تصدير إلى CSV",
+    "deleteSelected": "حذف المحدد ({{count}})",
+    "showing": "عرض {{start}} إلى {{end}} من {{total}} اشتراك",
+    "filter": {
+      "all": "جميع الحالات",
+      "active": "النشطة فقط",
+      "expired": "المنتهية فقط"
+    }
+  },
+  "form": {
+    "emailPlaceholder": "أدخل البريد الإلكتروني",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "title": "إضافة اشتراك جديد"
+  },
+  "language": "English"
+}

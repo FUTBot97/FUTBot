@@ -1,0 +1,57 @@
+{
+  "login": {
+    "title": "FutBot Admin",
+    "subtitle": "Sign in to manage your subscriptions",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "usernamePlaceholder": "Enter your username",
+    "passwordPlaceholder": "Enter your password"
+  },
+  "dashboard": {
+    "title": "FutBot Subscription Manager",
+    "subscriptionsTitle": "Subscriptions",
+    "stats": {
+      "total": "Total Subscriptions",
+      "active": "Active Subscriptions",
+      "expired": "Expired Subscriptions"
+    },
+    "addSubscription": "New Subscription",
+    "email": "Email",
+    "password": "Password",
+    "endDate": "End Date",
+    "status": "Status",
+    "actions": "Actions",
+    "active": "Active",
+    "expired": "Expired",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "duration": {
+      "custom": "Custom Date",
+      "preset": "Preset Duration",
+      "6hours": "6 Hours",
+      "1month": "1 Month",
+      "2months": "2 Months",
+      "3months": "3 Months",
+      "6months": "6 Months",
+      "1year": "1 Year"
+    },
+    "search": "Search subscriptions...",
+    "export": "Export to CSV",
+    "deleteSelected": "Delete Selected ({{count}})",
+    "showing": "Showing {{start}} to {{end}} of {{total}} subscriptions",
+    "filter": {
+      "all": "All Status",
+      "active": "Active Only",
+      "expired": "Expired Only"
+    }
+  },
+  "form": {
+    "emailPlaceholder": "Enter email address",
+    "passwordPlaceholder": "Enter password",
+    "title": "Add New Subscription"
+  },
+  "language": "العربية"
+}

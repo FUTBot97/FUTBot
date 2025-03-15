@@ -1,0 +1,49 @@
+# Enable CORS
+Header set Access-Control-Allow-Origin "*"
+
+# Proper MIME type handling
+AddType application/javascript .js
+AddType application/javascript .mjs
+AddType text/javascript .js
+AddType text/javascript .mjs
+AddType text/css .css
+
+# Handle JavaScript modules
+<FilesMatch "\.js$">
+    Header set Content-Type "application/javascript"
+</FilesMatch>
+<FilesMatch "\.mjs$">
+    Header set Content-Type "application/javascript"
+</FilesMatch>
+
+# Enable rewrite engine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Don't rewrite files or directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Rewrite everything else to index.html
+    RewriteRule ^(.*)$ index.html [L]
+</IfModule>
+
+# Caching rules
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Cache JavaScript and CSS files for 1 year
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    
+    # Cache images and fonts
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript text/javascript
+</IfModule>
